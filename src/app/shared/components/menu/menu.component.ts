@@ -7,21 +7,21 @@ import { MenuItem } from 'primeng/api';
   styles: [
   ]
 })
-export class MenuComponent implements OnInit{
+export class MenuComponent{
 
-  public menuItems: MenuItem[] | undefined;
+  menuItems: MenuItem[] | undefined;
+
   ngOnInit() {
-    this.menuItems = [
-        {
-            label: 'New',
-            icon: 'pi pi-fw pi-plus',
-        },
-        {
-            label: 'Delete',
-            icon: 'pi pi-fw pi-trash'
-        }
-    ];
+      this.menuItems = [
+          {
+              label: 'New',
+              icon: 'pi pi-fw pi-plus',
+          },
+          {
+              label: 'Delete',
+              icon: 'pi pi-fw pi-trash'
+          }
+      ];
+  }
 }
 
-
-}
