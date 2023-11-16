@@ -18,5 +18,38 @@
         <p-card header="titlecase">
             {{ fullName | titlecase }}
         </p-card>
+    </div>    
+    <div class="col-12 md:col-6">
+        <p-card header="titlecase">
+            <ol>
+                <li>Fecha</li>
+                <li>Fecha | date</li>
+                <li>Fecha | short</li>
+                <li>Fecha | long</li>
+                <li>Fecha | MMMM</li>
+            </ol>
+            <hr>|
+            <ol>
+                <li>Date | date: 'long': 'GMT-6' </li>
+                <li>Date | date: 'long': 'GMT-4' </li>
+            </ol>
+        </p-card>
+    </div>
+    <div class="col-12 md:col-6">
+        <p-card header="titlecase">
+            <ol>
+                <li> {{customDate}} </li>
+                <li> {{customDate | date }}</li>
+                <li> {{customDate | date:'short' }}</li>
+                <li> {{customDate | date:'long' }}</li>
+                <li> {{customDate | date:'MMMM' }}</li> 
+            </ol>
+            <hr>|
+            <ol>
+                <li>{{customDate | date: 'long': 'GMT-6'}} </li>
+                <li>{{customDate | date: 'long': 'GMT-4'}} </li>
+                <li>{{customDate | date: 'long': '': 'en-US'}} </li>
+            </ol>
+        </p-card>
     </div>
 </div>
