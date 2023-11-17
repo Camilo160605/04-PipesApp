@@ -14,4 +14,9 @@
             {{ totalSells | currency:'USD':'symbol-narrow':'1.2-2'}}
         </p-card>
     </div>
+    <div class="col-12 md:col-4">
+        <p-card header="Ventas en porcentaje" subheader="del presente año">
+            {{ percent | percent:'1.2-2'}}
+        </p-card>
+    </div>
 </div>
